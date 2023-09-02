@@ -1,0 +1,199 @@
+:root{
+    --mainbg:#B39A09 ;
+    --mainbg2:#514901 ;
+    --mainbg3:#CFBB02 ;
+    --lightbg:#fff ;
+    --darkbg:#000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    /* background-color: var(--mainbg); */
+    min-height: 200vh;
+    color:#514901;
+    overflow-x: hidden;
+}
+
+.navbar-nav a{
+    display: flex;
+    justify-content: center;
+    color: var(--mainbg3);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.logo{
+    position: absolute;
+    display: inline;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-image: url(img/2.png);
+    width: 80px;
+    height: 80px;
+    top: -13px;
+    left: -1.5px;
+
+}
+.namalogo{
+    position: absolute;
+    display: inline;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-image: url(img/3.png);
+    width: 200px;
+    height: 200px;
+    top: -73px;
+
+    
+
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/2.svg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height:100vh;
+}
+.containerconten{
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    width: 300px;
+
+}
+#home h1{
+    font-size: 3em;
+    padding: 5px;
+    text-align: center;
+}
+#home h2{
+    font-size: 2rem;
+    text-align: center;
+}
+#home h3{
+    text-align: center;
+}
+#home sub{
+    font-size: 1pc;
+    display:flex;
+    justify-content: center;
+    /* align-items:center; */
+}
+.button {
+    text-decoration: none;
+    border:var(--darkbg) solid 2px;
+    color: #000000;
+    border-radius:25px;
+    font-size: 15px;
+    padding:5px 20px;
+}
+.button:hover {
+    text-decoration: none;
+    border: var(--lightbg) solid 2px;
+    color: #ffffff;
+    background-color: var(--mainbg3);
+    border-radius:25px;
+    font-size: 15px;
+    padding:5px 20px;
+}
+#about{
+    background-image: url(img/3.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height:100vh;
+    padding-top: 50px;
+}
+/* #about h1{
+    background-color: blueviolet;
+    display: block;
+    text-align: center;
+    font-size:3rem;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 2 ;    
+} */
+
+.tempatfoto{
+    position: relative;
+    float:left;
+    left: -250px;
+    height: 80vh;
+    width: 80vh;
+    background-color: var(--mainbg3);
+    transform: rotate(45deg);
+
+}
+.containercontentabout{
+    position:absolute;
+    display: block;
+    float: left;
+    left: 20px;
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+.containercontentabout h2{
+    position: relative;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.containercontentabout p{
+    font-size: 15px;
+}
+.kolom{
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+}
+.col{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: 10px;
+}
+#project{
+    height:auto;
+    display: flex;
+    justify-content: center;
+}
+#contact{
+
+    height:100vh;
+}
+/* media query */
+/* laptop */
+@media (max-width:992px){
+    html{
+        size: 80%;
+        font-size: 80%;
+    }
+    
+}
+/* tablet */
+@media (max-width:768px){
+    html{
+        size: 70%;
+        font-size: 65%;
+    }
+    
+}
+/* mobil phone */
+@media (max-width:576px){
+    html{
+        size: 65%;
+        font-size: 60%;
+    }
+        
+}
